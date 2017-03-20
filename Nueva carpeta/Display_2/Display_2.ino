@@ -17,7 +17,7 @@ const int E = 9;
 const int F = 10;
 const int G = 11;
 const int polsador = 2;
-boolean polsadorEstat = LOW; 
+int a = 500;
 //********** Setup ****************************************************************
 void setup()
 {
@@ -35,8 +35,8 @@ void setup()
 //********** Loop *****************************************************************
 void loop()
 {
-  if (digitalWrite (polsadorEstat,HIGH));
-  {
+  if(digitalRead(2)){
+  delay (a);
   digitalWrite (A,HIGH); //0
   digitalWrite (B,HIGH);
   digitalWrite (C,HIGH);
@@ -45,8 +45,9 @@ void loop()
   digitalWrite (F,HIGH);
   digitalWrite (G,LOW);
   }
-  if (digitalWrite (polsadorEstat,HIGH));
+  if(digitalRead(2))
   {
+  delay (a);
   digitalWrite (A,LOW); //1
   digitalWrite (B,HIGH);
   digitalWrite (C,HIGH);
@@ -55,7 +56,7 @@ void loop()
   digitalWrite (F,LOW);
   digitalWrite (G,LOW);
   }
-  if (digitalWrite (polsadorEstat,HIGH));
+  if(digitalRead(2))
   {
   digitalWrite (A,HIGH); //2
   digitalWrite (B,HIGH);
@@ -66,8 +67,9 @@ void loop()
   digitalWrite (G,HIGH);
   
   }
-  if (digitalWrite (polsadorEstat,HIGH));
+  if(digitalRead(2))
   {
+    delay (a);
   digitalWrite (A,HIGH); //3
   digitalWrite (B,HIGH);
   digitalWrite (C,HIGH);
@@ -76,8 +78,9 @@ void loop()
   digitalWrite (F,LOW);
   digitalWrite (G,HIGH);
   }
-  if (digitalWrite (polsadorEstat,HIGH));
+  if(digitalRead(2))
   {
+    delay (a);
   digitalWrite (A,LOW); //4
   digitalWrite (B,HIGH);
   digitalWrite (C,HIGH);
@@ -86,8 +89,9 @@ void loop()
   digitalWrite (F,HIGH);
   digitalWrite (G,HIGH);
   }
-  if (digitalWrite (polsadorEstat,HIGH));
+  if(digitalRead(2))
   {
+    delay (a);
   digitalWrite (A,HIGH); //5
   digitalWrite (B,LOW);
   digitalWrite (C,HIGH);
@@ -96,8 +100,9 @@ void loop()
   digitalWrite (F,HIGH);
   digitalWrite (G,HIGH);
   }
-  if (digitalWrite (polsadorEstat,HIGH));
+  if(digitalRead(2))
   {
+    delay (a);
   digitalWrite (A,LOW); //6
   digitalWrite (B,LOW);
   digitalWrite (C,HIGH);
@@ -106,8 +111,9 @@ void loop()
   digitalWrite (F,HIGH);
   digitalWrite (G,HIGH);
   }
-  if (digitalWrite (polsadorEstat,HIGH));
+  if(digitalRead(2))
   {
+    delay (a);
   digitalWrite (A,HIGH); //7
   digitalWrite (B,HIGH);
   digitalWrite (C,HIGH);
@@ -116,8 +122,9 @@ void loop()
   digitalWrite (F,LOW);
   digitalWrite (G,LOW);
   }
-  if (digitalWrite (polsadorEstat,HIGH));
+  if(digitalRead(2))
   {
+    delay (a);
   digitalWrite (A,HIGH); //8
   digitalWrite (B,HIGH);
   digitalWrite (C,HIGH);
@@ -126,8 +133,9 @@ void loop()
   digitalWrite (F,HIGH);
   digitalWrite (G,HIGH);
   }
-  if (digitalWrite (polsadorEstat,HIGH));
+  if(digitalRead(2))
   {
+    delay (a);
   digitalWrite (A,HIGH); //9
   digitalWrite (B,HIGH);
   digitalWrite (C,HIGH);
