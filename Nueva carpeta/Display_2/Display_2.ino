@@ -18,6 +18,7 @@ const int F = 10;
 const int G = 11;
 const int polsador = 2;
 int a = 500;
+int num = 0;
 //********** Setup ****************************************************************
 void setup()
 {
@@ -35,7 +36,16 @@ void setup()
 //********** Loop *****************************************************************
 void loop()
 {
-  if(digitalRead(2)){
+  if(digitalRead(2))
+  {
+    num = num + 1;
+    if (num==10){
+    num = 0;
+    }
+    }
+    
+  
+  if(num==0){
   delay (a);
   digitalWrite (A,HIGH); //0
   digitalWrite (B,HIGH);
@@ -45,7 +55,7 @@ void loop()
   digitalWrite (F,HIGH);
   digitalWrite (G,LOW);
   }
-  if(digitalRead(2))
+  if(num==1)
   {
   delay (a);
   digitalWrite (A,LOW); //1
@@ -56,8 +66,9 @@ void loop()
   digitalWrite (F,LOW);
   digitalWrite (G,LOW);
   }
-  if(digitalRead(2))
+  if(num==2)
   {
+    delay(a);
   digitalWrite (A,HIGH); //2
   digitalWrite (B,HIGH);
   digitalWrite (C,LOW);
@@ -67,7 +78,7 @@ void loop()
   digitalWrite (G,HIGH);
   
   }
-  if(digitalRead(2))
+  if(num==3)
   {
     delay (a);
   digitalWrite (A,HIGH); //3
@@ -78,7 +89,7 @@ void loop()
   digitalWrite (F,LOW);
   digitalWrite (G,HIGH);
   }
-  if(digitalRead(2))
+  if(num==4)
   {
     delay (a);
   digitalWrite (A,LOW); //4
@@ -89,7 +100,7 @@ void loop()
   digitalWrite (F,HIGH);
   digitalWrite (G,HIGH);
   }
-  if(digitalRead(2))
+  if(num==5)
   {
     delay (a);
   digitalWrite (A,HIGH); //5
@@ -100,7 +111,7 @@ void loop()
   digitalWrite (F,HIGH);
   digitalWrite (G,HIGH);
   }
-  if(digitalRead(2))
+  if(num==6)
   {
     delay (a);
   digitalWrite (A,LOW); //6
@@ -111,7 +122,7 @@ void loop()
   digitalWrite (F,HIGH);
   digitalWrite (G,HIGH);
   }
-  if(digitalRead(2))
+  if(num==7)
   {
     delay (a);
   digitalWrite (A,HIGH); //7
@@ -122,7 +133,7 @@ void loop()
   digitalWrite (F,LOW);
   digitalWrite (G,LOW);
   }
-  if(digitalRead(2))
+  if(num==8)
   {
     delay (a);
   digitalWrite (A,HIGH); //8
@@ -133,7 +144,7 @@ void loop()
   digitalWrite (F,HIGH);
   digitalWrite (G,HIGH);
   }
-  if(digitalRead(2))
+  if(num==9)
   {
     delay (a);
   digitalWrite (A,HIGH); //9
